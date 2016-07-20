@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Chain Reaction</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="A strategy game for 2 players.
+  The objective of Chain Reaction is to take control of the board by eliminating your opponents' orbs.
+  Players take it in turns to place their orbs in a cell. Once a cell has reached critical mass the orbs explode into the surrounding cells adding an extra orb and claiming the cell for the player. A player may only place their orbs in a blank cell or a cell that contains orbs of their own colour. As soon as a player looses all their orbs they are out of the game.">
+  <meta name="keywords" content="Chain Reaction,game,online,web,addictive,open,source,github,student,multiplayer,app,responsive,chain,reaction,play">
+  <meta name="author" content="Shajan Jacob">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+</br></br>	
+<h1>Chain Reactions</h1>
+</br>
+<div class="game-container">
+  <div id="playhint" class="plyh">
+   <div class="grid-container">
+    <div class="grid-row">
+      <div cellpos="1,1" class="grid-cell" onclick="playthis(this)"><div id="1-1" class=""></div></div>
+      <div cellpos="1,2" class="grid-cell" onclick="playthis(this)"><div id="1-2" class=""></div></div>
+      <div cellpos="1,3" class="grid-cell" onclick="playthis(this)"><div id="1-3" class=""></div></div>
+      <div cellpos="1,4" class="grid-cell" onclick="playthis(this)"><div id="1-4" class=""></div></div>
+      <div cellpos="1,5" class="grid-cell" onclick="playthis(this)"><div id="1-5" class=""></div></div>
+      <div cellpos="1,6" class="grid-cell" onclick="playthis(this)"><div id="1-6" class=""></div></div>
+      <div cellpos="1,7" class="grid-cell" onclick="playthis(this)"><div id="1-7" class=""></div></div>
+      <div cellpos="1,8" class="grid-cell" onclick="playthis(this)"><div id="1-8" class=""></div></div>
+      <div cellpos="1,9" class="grid-cell" onclick="playthis(this)"><div id="1-9" class=""></div></div>
+      <div cellpos="1,10" class="grid-cell" onclick="playthis(this)"><div id="1-10" class=""></div></div>
+    </div>
+    <div class="grid-row">
+      <div cellpos="2,1" class="grid-cell" onclick="playthis(this)"><div id="2-1" class=""></div></div>
+      <div cellpos="2,2" class="grid-cell" onclick="playthis(this)"><div id="2-2" class=""></div></div>
+      <div cellpos="2,3" class="grid-cell" onclick="playthis(this)"><div id="2-3" class=""></div></div>
+      <div cellpos="2,4" class="grid-cell" onclick="playthis(this)"><div id="2-4" class=""></div></div>
+      <div cellpos="2,5" class="grid-cell" onclick="playthis(this)"><div id="2-5" class=""></div></div>
+      <div cellpos="2,6" class="grid-cell" onclick="playthis(this)"><div id="2-6" class=""></div></div>
+      <div cellpos="2,7" class="grid-cell" onclick="playthis(this)"><div id="2-7" class=""></div></div>
+      <div cellpos="2,8" class="grid-cell" onclick="playthis(this)"><div id="2-8" class=""></div></div>
+      <div cellpos="2,9" class="grid-cell" onclick="playthis(this)"><div id="2-9" class=""></div></div>
+      <div cellpos="2,10" class="grid-cell" onclick="playthis(this)"><div id="2-10" class=""></div></div>
+    </div>
+    <div class="grid-row">
+      <div cellpos="3,1" class="grid-cell" onclick="playthis(this)"><div id="3-1" class=""></div></div>
+      <div cellpos="3,2" class="grid-cell" onclick="playthis(this)"><div id="3-2" class=""></div></div>
+      <div cellpos="3,3" class="grid-cell" onclick="playthis(this)"><div id="3-3" class=""></div></div>
+      <div cellpos="3,4" class="grid-cell" onclick="playthis(this)"><div id="3-4" class=""></div></div>
+      <div cellpos="3,5" class="grid-cell" onclick="playthis(this)"><div id="3-5" class=""></div></div>
+      <div cellpos="3,6" class="grid-cell" onclick="playthis(this)"><div id="3-6" class=""></div></div>
+      <div cellpos="3,7" class="grid-cell" onclick="playthis(this)"><div id="3-7" class=""></div></div>
+      <div cellpos="3,8" class="grid-cell" onclick="playthis(this)"><div id="3-8" class=""></div></div>
+      <div cellpos="3,9" class="grid-cell" onclick="playthis(this)"><div id="3-9" class=""></div></div>
+      <div cellpos="3,10" class="grid-cell" onclick="playthis(this)"><div id="3-10" class=""></div></div>
+    </div>
+    <div class="grid-row">
+      <div cellpos="4,1" class="grid-cell" onclick="playthis(this)"><div id="4-1" class=""></div></div>
+      <div cellpos="4,2" class="grid-cell" onclick="playthis(this)"><div id="4-2" class=""></div></div>
+      <div cellpos="4,3" class="grid-cell" onclick="playthis(this)"><div id="4-3" class=""></div></div>
+      <div cellpos="4,4" class="grid-cell" onclick="playthis(this)"><div id="4-4" class=""></div></div>
+      <div cellpos="4,5" class="grid-cell" onclick="playthis(this)"><div id="4-5" class=""></div></div>
+      <div cellpos="4,6" class="grid-cell" onclick="playthis(this)"><div id="4-6" class=""></div></div>
+      <div cellpos="4,7" class="grid-cell" onclick="playthis(this)"><div id="4-7" class=""></div></div>
+      <div cellpos="4,8" class="grid-cell" onclick="playthis(this)"><div id="4-8" class=""></div></div>
+      <div cellpos="4,9" class="grid-cell" onclick="playthis(this)"><div id="4-9" class=""></div></div>
+      <div cellpos="4,10" class="grid-cell" onclick="playthis(this)"><div id="4-10" class=""></div></div>
+    </div>
+    <div class="grid-row">
+      <div cellpos="5,1" class="grid-cell" onclick="playthis(this)"><div id="5-1" class=""></div></div>
+      <div cellpos="5,2" class="grid-cell" onclick="playthis(this)"><div id="5-2" class=""></div></div>
+      <div cellpos="5,3" class="grid-cell" onclick="playthis(this)"><div id="5-3" class=""></div></div>
+      <div cellpos="5,4" class="grid-cell" onclick="playthis(this)"><div id="5-4" class=""></div></div>
+      <div cellpos="5,5" class="grid-cell" onclick="playthis(this)"><div id="5-5" class=""></div></div>
+      <div cellpos="5,6" class="grid-cell" onclick="playthis(this)"><div id="5-6" class=""></div></div>
+      <div cellpos="5,7" class="grid-cell" onclick="playthis(this)"><div id="5-7" class=""></div></div>
+      <div cellpos="5,8" class="grid-cell" onclick="playthis(this)"><div id="5-8" class=""></div></div>
+      <div cellpos="5,9" class="grid-cell" onclick="playthis(this)"><div id="5-9" class=""></div></div>
+      <div cellpos="5,10" class="grid-cell" onclick="playthis(this)"><div id="5-10" class=""></div></div>
+    </div>
+    <div class="grid-row">
+      <div cellpos="6,1" class="grid-cell" onclick="playthis(this)"><div id="6-1" class=""></div></div>
+      <div cellpos="6,2" class="grid-cell" onclick="playthis(this)"><div id="6-2" class=""></div></div>
+      <div cellpos="6,3" class="grid-cell" onclick="playthis(this)"><div id="6-3" class=""></div></div>
+      <div cellpos="6,4" class="grid-cell" onclick="playthis(this)"><div id="6-4" class=""></div></div>
+      <div cellpos="6,5" class="grid-cell" onclick="playthis(this)"><div id="6-5" class=""></div></div>
+      <div cellpos="6,6" class="grid-cell" onclick="playthis(this)"><div id="6-6" class=""></div></div>
+      <div cellpos="6,7" class="grid-cell" onclick="playthis(this)"><div id="6-7" class=""></div></div>
+      <div cellpos="6,8" class="grid-cell" onclick="playthis(this)"><div id="6-8" class=""></div></div>
+      <div cellpos="6,9" class="grid-cell" onclick="playthis(this)"><div id="6-9" class=""></div></div>
+      <div cellpos="6,10" class="grid-cell" onclick="playthis(this)"><div id="6-10" class=""></div></div>
+    </div>
+
+  </div>
+</div>
+</div>
+</body>
+</html>
